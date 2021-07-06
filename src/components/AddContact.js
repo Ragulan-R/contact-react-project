@@ -4,7 +4,7 @@ class AddContact extends React.Component {
   render() {
     return (
       <div className='ui main'>
-        <h1>Add Contact</h1>
+        <h2>Add Contact</h2>
         <form className='ui form'>
           <div className='field'>
             <label>Name</label>
@@ -14,6 +14,7 @@ class AddContact extends React.Component {
             <label>Email</label>
             <input type='text' name='email' placeholder='email' />
           </div>
+          <button className='ui button blue'>Add</button>
         </form>
       </div>
     )
