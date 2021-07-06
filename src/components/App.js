@@ -5,11 +5,25 @@ import AddContact from './AddContact'
 import ContactList from './ContactList'
 
 function App() {
+  const contacts = [
+    {
+      id: '1',
+      name: 'Ragulan',
+      email: 'ragulancodes@gmail.com',
+    },
+    {
+      id: '2',
+      name: 'Ricky',
+      email: 'rickycodes@gmail.com',
+    },
+  ]
+
   return (
     <div className='ui container'>
       <Header />
       <AddContact />
-      <ContactList />
+      <ContactList contacts={contacts} />
+      {/* passing contacts array to contact component */}
     </div>
   )
 }
