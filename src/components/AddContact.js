@@ -17,6 +17,7 @@ class AddContact extends React.Component {
     console.log(this.state)
     // after hitting submit you can see the name in both addcontact and app.js
     this.setState({ name: '', email: '' })
+    // clears the name and email after submit
   }
 
   render() {
